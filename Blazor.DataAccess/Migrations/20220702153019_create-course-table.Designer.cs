@@ -4,14 +4,16 @@ using Blazor.DataAccess.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Blazor.DataAccess.Migrations
 {
     [DbContext(typeof(BlazorContext))]
-    partial class BlazorContextModelSnapshot : ModelSnapshot
+    [Migration("20220702153019_create-course-table")]
+    partial class createcoursetable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

@@ -13,5 +13,7 @@ namespace Blazor.DataAccess.Data
         {
 
         }
+      public   DbSet<Course> Courses { get; set; }
+        //
     }
 }
